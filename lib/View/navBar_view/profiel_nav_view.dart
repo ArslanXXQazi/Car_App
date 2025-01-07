@@ -50,7 +50,7 @@ class ProfileNavView extends StatelessWidget {
             ProfileListTile(iconData: Icons.lock_open, text: "Privacy", ontap: (){}),
             ProfileListTile(iconData: Icons.help_center_outlined, text: "Help Support", ontap: (){}),
             ProfileListTile(iconData: Icons.person_add_alt_1_outlined, text: "Invite Friends", ontap: (){}),
-            ProfileListTile(iconData: Icons.logout, text: "Log Out", ontap: (){}),
+            ProfileListTile(iconData: Icons.logout, text: "Log Out", ontap: (){Navigator.push(context, CupertinoPageRoute(builder: (context)=>SigninView()));}),
           ],),
         ),
       ),
