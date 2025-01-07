@@ -35,7 +35,18 @@ class WalletNavView extends StatelessWidget {
                 width: width*.95,
                 height: height*.25,
                 decoration: BoxDecoration(
-                  color: Colors.lightBlueAccent.shade100,
+                  gradient: LinearGradient(colors: [
+
+                    Colors.greenAccent,
+                    Colors.lightBlue,
+                    Colors.orangeAccent,
+                    Colors.red.shade400,
+
+
+                  ],
+
+
+                  ),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Padding(
