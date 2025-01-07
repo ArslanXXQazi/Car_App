@@ -35,9 +35,9 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home:NavBarView(),
+      home://NavBarView(),
       //HomeNavView(),
-      //SplashView(),
+      SplashView(),
     );
   }
 }

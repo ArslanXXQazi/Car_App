@@ -1,5 +1,6 @@
 
 
+import 'package:car_rental/View/navBar_view/navbar_view.dart';
 import 'package:car_rental/controller/constant/linkers.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -35,7 +36,7 @@ TextEditingController passwordController=TextEditingController();
              Padding(
                padding: EdgeInsets.symmetric(vertical: height*.015),
                child: CustomButton(text: "Sign in", onPressed: (){
-                 Navigator.push(context, CupertinoPageRoute(builder: (context)=>HomeNavView()));
+                 Navigator.push(context, CupertinoPageRoute(builder: (context)=>NavBarView()));
                }),
              ),
              TextButton(onPressed: (){

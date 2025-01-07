@@ -1,5 +1,6 @@
 import 'package:car_rental/controller/components/profile_list_tile.dart';
 import 'package:car_rental/controller/constant/linkers.dart';
+import 'package:flutter/cupertino.dart';
 
 class ProfileNavView extends StatelessWidget {
   const ProfileNavView({super.key});
@@ -24,7 +25,8 @@ class ProfileNavView extends StatelessWidget {
           child: Column(children: [
             CircleAvatar(
               radius: width*.17,
-              backgroundColor: Colors.grey,
+              backgroundColor: Colors.grey.shade200,
+              backgroundImage: AssetImage(Appimages.boy),
             ),
             Padding(
               padding:  EdgeInsets.only(top: height*.02),
@@ -40,7 +42,7 @@ class ProfileNavView extends StatelessWidget {
               ),
             ),
             SizedBox(height: height*.02,),
-            ProfileListTile(iconData: Icons.person, text: "Edit Profile", ontap: (){}),
+            ProfileListTile(iconData: Icons.person, text: "Edit Profile", ontap: (){Navigator.push(context, CupertinoPageRoute(builder: (context)=>ProfileView()));}),
             ProfileListTile(iconData: Icons.location_on_outlined, text: "Address", ontap: (){}),
             ProfileListTile(iconData: Icons.notifications_active_outlined, text: "Notification", ontap: (){}),
             ProfileListTile(iconData: Icons.payment, text: "Payment", ontap: (){}),

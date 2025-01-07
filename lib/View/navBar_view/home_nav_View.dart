@@ -69,7 +69,7 @@ TextEditingController searchController=TextEditingController();
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CustomTextBold(text: "Special Offer"),
+                  CustomTextBold(text: "Special Offer",fontsize: 18,),
                  TextButton(onPressed: (){
                    Navigator.push(context, CupertinoPageRoute(builder: (context)=>SpecialOfferView()));
 
@@ -135,7 +135,7 @@ TextEditingController searchController=TextEditingController();
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                CustomTextBold(text: "Top Deals"),
+                CustomTextBold(text: "Top Deals",fontsize: 18,),
                 TextButton(onPressed: (){
                   Navigator.push(context, CupertinoPageRoute(builder: (context)=>TopDealsView()));
                 }, child:  CustomText(text: 'See all')),
