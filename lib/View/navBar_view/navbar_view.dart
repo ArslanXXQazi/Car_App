@@ -1,6 +1,7 @@
 
 import 'package:car_rental/View/navBar_view/inbox_nav_view.dart';
 import 'package:car_rental/View/navBar_view/order_nav_view.dart';
+import 'package:car_rental/View/navBar_view/profiel_nav_view.dart';
 import 'package:car_rental/View/navBar_view/wallet_nav_view.dart';
 import 'package:car_rental/controller/constant/linkers.dart';
 
@@ -26,7 +27,7 @@ class _NavBarViewState extends State<NavBarView> {
     OrderNavView(),
     InboxNavView(),
     WalletNavView(),
-    HomeNavView(),
+    ProfileNavView(),
   ];
 
   @override
