@@ -36,12 +36,10 @@ class WalletNavView extends StatelessWidget {
                 height: height*.25,
                 decoration: BoxDecoration(
                   gradient: LinearGradient(colors: [
-
                     Colors.greenAccent,
                     Colors.lightBlue,
                     Colors.orangeAccent,
-                    Colors.red.shade400,
-
+                    Colors.red.shade500,
 
                   ],
 
