@@ -1,3 +1,4 @@
+import 'package:car_rental/View/home_view/top_up_view.dart';
 import 'package:car_rental/View/home_view/transaction_history.dart';
 import 'package:car_rental/controller/components/custom_list.dart';
 import 'package:car_rental/controller/constant/linkers.dart';
@@ -68,7 +69,9 @@ class WalletNavView extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                         CustomTextBold(text: '\$12,500',fontsize: 35,color: Colors.white,),
-                        ElevatedButton(onPressed: (){},
+                        ElevatedButton(onPressed: (){
+                          Navigator.push(context, CupertinoPageRoute(builder: (context)=>TopUpView()));
+                        },
                             child: Row(children: [
                       //    Icon(Icons.incomplete_circle_rounded),
                           CustomTextBold(text: 'Top Up',fontsize: 18,),],),

@@ -5,6 +5,16 @@ class TopUpView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        title: CustomTextBold(text: 'Top Up E-Wallet'),
+        centerTitle: true,
+      ),
+      body: Column(children: [
+        CustomText(text: 'Enter the amount of top up'),
+      ],),
+    );
   }
 }
