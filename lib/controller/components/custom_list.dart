@@ -157,3 +157,35 @@ class CustomTransactionList extends StatelessWidget {
     );
   }
 }
+
+
+
+class PaymentListTile extends StatelessWidget {
+  String text;
+  String image;
+  PaymentListTile({super.key,required this.text,required this.image});
+  @override
+  Widget build(BuildContext context) {
+    final width=MediaQuery.sizeOf(context).width;
+    final height=MediaQuery.sizeOf(context).height;
+    return Padding(
+      padding:  EdgeInsets.only(bottom: height*.04),
+      child: ListTile(
+        leading: CircleAvatar(
+          backgroundColor: Colors.white,
+          radius: width*.05,
+         child: Image(image: AssetImage(image)),
+        ),
+        title: CustomTextBold(text: text,fontsize: 18,),
+        trailing: CircleAvatar(
+          radius: width*.025,
+          backgroundColor: Colors.black,
+          child: CircleAvatar(
+            radius: width*.02,
+            backgroundColor: Colors.white,
+          ),
+        ),
+      ),
+    );
+  }
+}

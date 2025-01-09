@@ -1,5 +1,7 @@
+import 'package:car_rental/View/home_view/payment_method_view.dart';
 import 'package:car_rental/controller/components/topup_container.dart';
 import 'package:car_rental/controller/constant/linkers.dart';
+import 'package:flutter/cupertino.dart';
 
 class TopUpView extends StatelessWidget {
   TopUpView({super.key});
@@ -63,7 +65,9 @@ TextEditingController topupController=TextEditingController(text: '00');
               ],),
             Padding(
               padding: EdgeInsets.only(top: height*.02),
-              child: CustomButton(text: 'Continue', onPressed: (){}),
+              child: CustomButton(text: 'Continue', onPressed: (){
+                Navigator.push(context, CupertinoPageRoute(builder: (context)=>PaymentMethodView()));
+              }),
             ),
           ],),
         ),

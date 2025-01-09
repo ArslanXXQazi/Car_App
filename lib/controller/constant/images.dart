@@ -36,4 +36,7 @@ class Appimages
   static String teslalogo='assets/teslalogo.png';
   static String nessanlogo='assets/nessanlogo.png';
   static String volvologo='assets/volvologo.png';
+  static String paypal='assets/paypal.png';
+  static String mastercard='assets/mastercard.png';
+  static String wallet='assets/wallet.png';
 }
