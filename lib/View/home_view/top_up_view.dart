@@ -12,9 +12,27 @@ class TopUpView extends StatelessWidget {
         title: CustomTextBold(text: 'Top Up E-Wallet'),
         centerTitle: true,
       ),
-      body: Column(children: [
-        CustomText(text: 'Enter the amount of top up'),
-      ],),
+      body: Center(
+        child: Column(children: [
+          CustomText(text: 'Enter the amount of top up'),
+        Container(
+
+          child: TextFormField(
+            decoration: InputDecoration(
+                border: InputBorder.none,
+                // focusedBorder: OutlineInputBorder(
+                //   borderRadius: BorderRadius.circular(20),
+                //   borderSide: BorderSide(color: Colors.grey),
+                // ),
+                // enabledBorder: OutlineInputBorder(
+                //   borderRadius: BorderRadius.circular(20),
+                //   borderSide: BorderSide(color: Colors.grey),
+                // )
+            ),
+          ),
+        )
+        ],),
+      ),
     );
   }
 }

@@ -76,6 +76,7 @@ class CustomCallsListTile extends StatelessWidget {
           Row(children: [
             CircleAvatar(
               radius: width*.06,
+              backgroundColor: Colors.white,
               backgroundImage: AssetImage(image),
             ),
             SizedBox(width: width*.03,),
@@ -129,6 +130,7 @@ class CustomTransactionList extends StatelessWidget {
           Row(children: [
             CircleAvatar(
               radius: width*.06,
+            backgroundColor: Colors.white,
               backgroundImage: AssetImage(image),
             ),
             SizedBox(width: width*.03,),
